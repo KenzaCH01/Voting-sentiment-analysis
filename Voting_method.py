@@ -70,7 +70,7 @@ for feature in df.columns:
         else:
             votes_df.loc[feature, clf_name] = "Negative"
 
-votes_df['Final Decision'] = votes_df.mode(axis=1)[0]
+votes_df['Final Vote'] = votes_df.mode(axis=1)[0]
 
 print("Votes based on coefficients:")
 votes_df
