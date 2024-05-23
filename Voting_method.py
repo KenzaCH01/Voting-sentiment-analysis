@@ -23,7 +23,7 @@ df = pd.DataFrame(denselist, columns=feature_names)
 df
 
 
-X_train, X_test, y_train, y_test = train_test_split(df, balanced_df['Sentiment'], test_size=0.2, random_state=0)
+X_train, X_test, y_train, y_test = train_test_split(df, data['Sentiment'], test_size=0.2, random_state=0)
 
 logistic_reg = LogisticRegression(random_state=0, max_iter=1000)
 logistic_reg.fit(X_train, y_train)
