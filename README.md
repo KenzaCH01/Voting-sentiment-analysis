@@ -11,7 +11,6 @@ from vote import Voting
 ### Import data and determine each review's sentiment polarity 
 ```python
 import pandas as pd 
-
 base = pd.read_excel('netflix.xlsx')
 base['note_binary'] = base['note'].apply(lambda x: 1 if x > 3 else 0)
 ```
