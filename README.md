@@ -36,15 +36,16 @@ base = model.fit(base['Comments'], base['note_binary'])
 ```python
 model.predict()
 ```
-|    | Feature      | Final Vote   |
-|---:|:-------------|:-------------|
-|  0 | en           | Positive     |
-|  1 | films en     | Positive     |
-|  2 | fait le      | Negative     |
-|  3 | excellent    | Positive     |
-|  4 | en france    | Positive     |
-|  5 | et mon       | Positive     |
-|  6 | faire        | Negative     |
-|  7 | en français  | Negative     |
+
+|    | Feature       | Final Vote   |
+|---:|:--------------|:-------------|
+|  0 | from the      | Positive     |
+|  1 | find it       | Negative     |
+|  2 | films on      | Positive     |
+|  3 | from          | Negative     |
+|  4 | french the    | Negative     |
+|  5 | free month    | Negative     |
+|  6 | have fibre    | Positive     |
+
 
 
