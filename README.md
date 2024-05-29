@@ -19,18 +19,17 @@ base['note_binary'] = base['note'].apply(lambda x: 1 if x > 3 else 0)
 ### Train the Voting model with the comments and the binary scores
 ```python
 model = Voting()
-model.fit(base['commentaire'], base['note_binary'])
+base = model.fit(base['Comments'], base['note_binary'])
 ```
 
-|                    | Logistic Regression   | Linear Discriminant Analysis   | SVM      | PLS Regression   | Ridge Classifier   | Final Vote   |
-|:-------------------|:----------------------|:-------------------------------|:---------|:-----------------|:-------------------|:-------------|
-| 11                 | Positive              | Positive                       | Positive | Positive         | Positive           | Positive     |
-| 12                 | Negative              | Negative                       | Negative | Negative         | Negative           | Negative     |
-| 13                 | Negative              | Negative                       | Negative | Negative         | Negative           | Negative     |
-| abandonne          | Negative              | Negative                       | Negative | Negative         | Negative           | Negative     |
-| abonnement         | Positive              | Negative                       | Positive | Positive         | Positive           | Positive     |
-| abonnement dans    | Positive              | Negative                       | Positive | Positive         | Positive           | Positive     |
-| abonnement netflix | Positive              | Positive                       | Positive | Positive         | Positive           | Positive     |
+|                      | Logistic Regression   | Linear Discriminant Analysis   | SVM      | PLS Regression   | Ridge Classifier   | Final Vote   |
+|:---------------------|:----------------------|:-------------------------------|:---------|:-----------------|:-------------------|:-------------|
+| 11                   | Negative              | Negative                       | Negative | Negative         | Negative           | Negative     |
+| 11 euros             | Positive              | Positive                       | Negative | Negative         | Negative           | Negative     |
+| 12                   | Negative              | Negative                       | Negative | Positive         | Negative           | Negative     |
+| 13                   | Negative              | Negative                       | Negative | Negative         | Negative           | Negative     |
+| abandoning           | Negative              | Negative                       | Negative | Negative         | Negative           | Negative     |
+| about                | Positive              | Positive                       | Positive | Negative         | Positive           | Positive     |
 
 
 ### Top features and their sentiment polarity
