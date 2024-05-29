@@ -12,7 +12,7 @@ from vote import Voting
 ```python
 import pandas as pd 
 
-base = pd.read_csv('netflix.csv', sep = ";")
+base = pd.read_excel('netflix.xlsx')
 base['note_binary'] = base['note'].apply(lambda x: 1 if x > 3 else 0)
 ```
 
