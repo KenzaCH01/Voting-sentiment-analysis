@@ -19,14 +19,15 @@ model = Voting()
 model.fit(base['commentaire'], base['note_binary'])
 ```
 
-Logistic Regression	Linear Discriminant Analysis	SVM	PLS Regression	Ridge Classifier	Final Vote
-11	Positive	Positive	Positive	Positive	Positive	Positive
-12	Negative	Negative	Negative	Negative	Negative	Negative
-13	Negative	Negative	Negative	Negative	Negative	Negative
-abandonne	Negative	Negative	Negative	Negative	Negative	Negative
-abonnement	Positive	Negative	Positive	Positive	Positive	Positive
-...	...	...	...	...	...	...
-épisode	Positive	Positive	Positive	Positive	Positive	Positive
+|                    | Logistic Regression   | Linear Discriminant Analysis   | SVM      | PLS Regression   | Ridge Classifier   | Final Vote   |
+|:-------------------|:----------------------|:-------------------------------|:---------|:-----------------|:-------------------|:-------------|
+| 11                 | Positive              | Positive                       | Positive | Positive         | Positive           | Positive     |
+| 12                 | Negative              | Negative                       | Negative | Negative         | Negative           | Negative     |
+| 13                 | Negative              | Negative                       | Negative | Negative         | Negative           | Negative     |
+| abandonne          | Negative              | Negative                       | Negative | Negative         | Negative           | Negative     |
+| abonnement         | Positive              | Negative                       | Positive | Positive         | Positive           | Positive     |
+| abonnement dans    | Positive              | Negative                       | Positive | Positive         | Positive           | Positive     |
+| abonnement netflix | Positive              | Positive                       | Positive | Positive         | Positive           | Positive     |
 
 
 ### Top features and their sentiment polarity
