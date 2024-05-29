@@ -14,7 +14,7 @@ base['note_binary'] = base['note'].apply(lambda x: 1 if x > 3 else 0)
 base
 ```
 
-### Train the Voting model with the Data and feature sentiment prediction
+### Train the Voting model with the comments and the binary scores
 ```python
 model = Voting()
 model.fit(base['commentaire'], base['note_binary'])
