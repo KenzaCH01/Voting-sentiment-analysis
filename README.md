@@ -1,7 +1,8 @@
 # Voting method to extract Valence Polarity
 
 * usage: Python 3.8 or below
-
+* pandas, numpy, sklearn
+  
 ### Import Voting 
 ```python
 from vote import Voting
