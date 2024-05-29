@@ -1,6 +1,6 @@
 # Voting method to extract Valence Polarity
 
-### Import the Voting model (Python 3.8 or below)
+### Import Voting (Python 3.8 or below)
 ```python
 from vote import Voting
 ```
